@@ -12,14 +12,16 @@ This project creates:
 
 ## Project Structure
 
+```
 .
-├── main.tf # Root module calling vpc, sg, and ec2 modules
-├── variables.tf # Root-level input variables
-├── outputs.tf # Root-level outputs (VPC ID, instance IP, etc.)
+├── main.tf
+├── variables.tf
+├── outputs.tf
 ├── modules/
-│ ├── vpc/ # VPC, subnet, internet gateway, route table
-│ ├── sg/ # Security group with ingress/egress rules
-│ └── ec2/ # EC2 instance
+│   ├── vpc/
+│   ├── sg/
+│   └── ec2/
+```
 
 
 ## Prerequisites
